@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+   
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="style.css" />
+   
+    <title>Home Document</title>
+    <script>
+
+        function validation() {
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var Phone = document.getElementById("Phone").value;
+          var emailReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+          var phoneno = /^\d{10}$/;
+          if (name === '' || email === '' || Phone === '') {
+          alert("Please fill all fields...!!!!!!");
+          return false;
+          } else if (!(email).match(emailReg)) {
+          alert("Invalid Email...!!!!!!");
+          return false;
+          } else if ((Phone).match(phoneno)) {
+          return true;
+          } else {
+            alert("Invalid Phone Number....!!!!!");
+            return false;
+          }
+          }
+        
+        
+        
+        function submit_by_id() {
+        
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var Phone = document.getElementById("Phone").value;
+         
+          if(name.value === '' || email.value === '' || Phone.value === ''){
+                danger.style.display = 'block';
+          }
+          else{
+                setTimeout(() => {
+                    name.value = '';
+                    email.value = '';
+                    Phone.value = '';
+                }, 2000);
+        
+                success.style.display = 'block';
+            }
+        
+            setTimeout(() => {
+                danger.style.display = 'none';
+                success.style.display = 'none';
+            }, 4000);
+        
+        }
+         
+        
+        
+          </script>
+          
+</head>
+<body>
+    <main>
+<div>
+    <div class="topnav">
+       
+        <a class="active" href="#contact">CONTACT</a>
+        <a href="#email">EMAIL</a>
+        <a href="#applyNow">APPLY NOW</a>
+        <a href="#payOnline">PAY ONLINE</a>
+        <a href="#quickContact">QUICK CONTACT</a>
+      </div>
+
+      
+      
+      <div style="padding-left:16px">
+        
+      </div>
+      <br><br>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+         <img src="C:\Users\arbin\Downloads\WhatsApp Image 2023-05-21 at 02.06.59.jpeg" alt="" width="250px" height="250px">
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">HOME</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSES <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/BCA.html">BCA</a></li>
+                <li><a href="/bcamca.html">BCA + MCA</a></li>
+                <li><a href="/Be.html">BE</a></li>
+                <li><a href="/Bcom.html">B.COM</a></li>
+                <li><a href="/bba.html">BBA</a></li>
+                <li><a href="/mbapgdm.html">MBA</a></li>
+                <li><a href="/hybridemba.html">HYBRID e MBA</a></li>
+              </ul>
+            </li>
+            <li><a href="/gallery.html">GALLERY</a></li>
+            <li><a href="/index.html#">ADDMISSION</a></li>
+            <li><a href="/head.html">OUR HEAD</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+      <div>
+        <img src="" alt="" width="" height="">
+      </div>
+        
+      <div class="container1">
+        <h1>VIDHYA SHEKHAR INSTITUTION OF MANAGEMENT STUDIES</h1>
+      </div>
+
+    </div>
+    <div id="slider">
+<figure>
+    <img src="https://e1.pxfuel.com/desktop-wallpaper/228/555/desktop-wallpaper-mba-mba.jpg" alt="" width="1550px" height="680px">
+    <img src="https://cutewallpaper.org/28/business-wallpaper-hd-computer/823824918.jpg" alt="" width="1550px" height="680px">
+    <img src="https://wallpaper.dog/large/20513168.jpg" alt="" width="1550px" height="680px">
+    <img src="https://wallpaper.dog/large/20512816.jpg" alt="" width="1550px" height="680px"/>
+    <img src="https://wallpaper.dog/large/20407836.jpg" alt="" width="1550px" height="680px"/>
+</figure> 
+<br><br>
+    </div>
+
+    <div class="heading2">
+        <div class="head">
+        <h1 class="head2">EMPOWERING TOWARDS BEING THE BEST</h1>
+         </div>
+         <table >
+        <tr>
+            <td class="content0-5">
+            <div class="content1">
+           
+            <h1 class="vision">OUR VISION</h1>
+            <p>To evolve as a centre of excellence in academics, research and development</p>
+                <p> to impart technological advancement to the society.</p>
+            <h1 class="mission">MISSION</h1>
+            <p>To provide the young prospective engineers with an environment conducive </p>
+                <p>for higher education and research. Our motive is to mould them as</p>
+                <p> responsible citizens with an attitude to use their knowledge and scientific</p>
+                <p> temper to uplift the downtrodden and improve the quality of life of fellow</p>
+                <p> human beings.</p>
+            </div>
+            </td>
+            
+                <td>
+        <div>
+            <img src="https://media.istockphoto.com/id/1272815911/photo/young-indian-female-university-student-stock-photo.jpg?s=612x612&w=0&k=20&c=Iwdc08GR3pw8_Qg3_nabNJUQYTo52EU3dvW4tsth1tE=" alt="" width="350px" height="250">
+            <img src="https://us.123rf.com/450wm/thelivephotos/thelivephotos2208/thelivephotos220800075/189823815-back-to-school-happy-clever-indian-or-arabian-male-student-in-stylish-wear-sits-at-the-table-with.jpg?ver=6" alt="" width="350px" height="250">
+        </div>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="heading-terriary u-margin-bottom-small">Academics</h3>
+              <p class="feature-box__text"></p>
+              The College’s 900+ faculty members will lead you on your academic
+              journey, sharing the knowledge and experiences they’ve gained
+              throughout their distinguished careers
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-compass"></i>
+              <h3 class="heading-terriary u-margin-bottom-small">Atheletics</h3>
+              <p class="feature-box__text"></p>
+              One of the most popular extracurricular activities is college
+              athletics, which provides student-athletes with an opportunity to
+              compete, form lasting relationships, develop their leadership.
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-heart"></i>
+              <h3 class="heading-terriary u-margin-bottom-small">
+                Health & Medicines
+              </h3>
+              <p class="feature-box__text"></p>
+              In the College of Health and Medicine, we aspire to meet the
+              healthcare needs of an ageing population, reduce the burden of
+              preventable chronic disease and deliver convenient and affordable
+              health services.
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-map"></i>
+              <h3 class="heading-terriary u-margin-bottom-small">
+                Career Guidance
+              </h3>
+              <p class="feature-box__text"></p>
+              Career Guidance is a counselling programme designed to help
+              students choose the right career path based on their educational ,
+              skills and professional choices .
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+
+
+
+
+
+    
+    <section class="section-tours" id="section-tours">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">Courses We Provide</h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--1">
+                <img src="https://thumbs.dreamstime.com/b/business-leader-vector-poster-paper-art-style-business-leader-concept-vector-poster-paper-art-origami-style-businessman-140874653.jpg" alt="" width="300px" height="250px">
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--1"
+                  >MANAGEMENT</span
+                >
+              </h4>
+              <h2>MBA</h2>
+              <div class="card__details">
+                <ul>
+                  <li>3 years Course</li>
+                  <li>Eligibility: 10+2</li>
+                  <li>Upto 120 Students</li>
+                  <li>Fee Structure</li>
+                  <li>Quality Education</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-1">
+              <div class="cart__cta">
+                <div class="card__price-box">
+                  <p class="card__detail-box">
+                    The main aim of the Faculty of Commerce & Management is to
+                    offer superior quality, affordable & professional
+                    education with view to build graduates & postgraduates
+                    with high ethical & leadership qualities.
+                  </p>
+                 
+                </div>
+                <a href="#management" class="btn btn--white">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--2">
+                <img src="https://inurture.co.in/wp-content/uploads/2021/09/BCA-General-800x440.jpg" alt="" width="300px" height="250px">
+              </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--2"
+                  >Bachelor's in Computer Application
+                </span>
+              </h4>
+              <h2>BCA</h2>
+              <div class="card__details">
+                <ul>
+                  <li>3 years Course</li>
+                  <li>Eligibility: 10+2</li>
+                  <li>Upto 200 Seats</li>
+                  <li>Fee Structure: &nbsp;</li>
+                  <li>Quality Education</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="cart__cta">
+                <div class="card__price-box">
+                  <p class="card__detail-box">
+                    BCA stands for Bachelor of Computer Application. It is a 3-year full-time course approved by the All India Council for 
+                    Technical Education (AICTE). The course curriculum provides a sound knowledge of computer fundamentals, programming concepts,
+                     and applications.
+                  </p>
+
+                </div>
+                <a href="#BCA" class="btn btn--white">Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card__side card__side--front">
+              <div class="card__picture card__picture--3"><img src="https://manavrachna.edu.in/wp-content/uploads/2017/04/BBA-IMAGE.jpg" alt="" width="300px" height="250px">
+            </div>
+              <h4 class="card__heading">
+                <span class="card__heading-span card__heading-span--3"
+                  >BBA</span
+                >
+              </h4>
+              <h2>BBA</h2>
+              <div class="card__details">
+                <ul>
+                  <li>3 years Course</li>
+                  <li>120 Seats</li>
+                  <li>Career Guidance</li>
+                  <li>Best in class Education</li>
+                  <li>Job Security</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-3">
+              <div class="cart__cta">
+                <div class="card__price-box">
+                  <p class="card__detail-box">
+                    BBA is a three-year professional undergraduate course in Business Management. The course is open to students from all three
+                     streams i.e., Science, Arts, and Commerce. The BBA course offers knowledge and training in management and leadership skills
+                      to prepare them for managerial roles and entrepreneurship
+                  </p>
+                
+                </div>
+                <a href="#BBA" class="btn btn--white">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="u-center-text u-margin-top-huge">
+        <a href="" class="btn btn-primary btn-lg">Discover Our Courses</a>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="section-contact">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              
+
+
+              <form action="" method="" class="form" id="form_id" >
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Contact page</h2>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    required
+                    id="name"
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Your Email"
+                    required
+                    id="email"
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Contact Number"
+                    id="Phone"
+                  />
+                  <label for="Phone" class="form__label">Contact Number</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-btn"></span>
+                      Join
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input type="radio" class="form__radio-input" id="large" name="size"/>
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-btn"></span>
+                      Existing Student
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn-success btn-lg" onclick="submit_by_id()" >Submit &rarr;</button>
+                </div>
+                
+                  <div class="message">
+              <div class="success" id="success" style="display: none;">Your Message Successfully Sent!</div>
+                  <div class="danger" id="danger" style="display: none;">Feilds Can't be Empty!</div>
+              </div>
+                
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+          <img src="C:\Users\arbin\Downloads\WhatsApp Image 2023-05-21 at 02.06.59.jpeg" alt="logo" class="footer__logo" />
+        </div>
+        <table class="footer-adjustment">
+            <tr>
+                <td>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="footer__navigation">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Company</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Contact Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Addmission</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Our Mission</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Our Team</a>
+                </li>
+              </ul>
+            </div>
+        </td>
+        <td>
+          </div>
+          <div class="col-1-of-2">
+            <p class="footer__copyright">
+              &copy;
+              <a href="#" class="footer__link"
+                ><strong> VIDHYA SHEKHAR INSTITUTION OF MANAGEMENT STUDIES</strong></a>
+            </p>
+          </div>
+        </div>
+    </td>
+    </tr>
+    </table>
+      </footer>
+</body>
+</html>
